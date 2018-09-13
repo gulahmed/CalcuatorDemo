@@ -37,6 +37,9 @@ while(user_input !='y')
     case '-':
     std::cout << " Subtration " <<subtract(first_val, second_val) << '\n';
     break;
+    case '*':
+    cout << " Multiplication:" << mult(first_val, second_val)<< '\n';
+    break;
     default:
        std::cout << "Invalid Opeator" << '\n';
   }
@@ -54,4 +57,9 @@ float add(float a, float b)
 float subtract(float a, float b)
 {
   return a - b;
+}
+
+float mult(float a, float b)
+{
+  return a * b;
 }
