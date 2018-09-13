@@ -40,6 +40,10 @@ while(user_input !='y')
     case '*':
     cout << " Multiplication:" << mult(first_val, second_val)<< '\n';
     break;
+    case '/':
+    cout<< "Division: " <<our_div(first_val, second_val);
+    break;
+
     default:
        std::cout << "Invalid Opeator" << '\n';
   }
@@ -62,4 +66,14 @@ float subtract(float a, float b)
 float mult(float a, float b)
 {
   return a * b;
+}
+
+float our_div(float a, float b)
+{
+  if (b !=0){
+  return a / b;
+}
+else {
+  return -1;
+}
 }
