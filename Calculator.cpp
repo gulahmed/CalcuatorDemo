@@ -1,12 +1,7 @@
 #include<iostream>
 #include<string>
+#include "mathly.h"
 using namespace std;
-
-float add(float a , float b );
-float our_div(float a, float b);
-float mult (float a, float b);
-float subtract(float a , float b);
-
 
 void calculator();
 
@@ -51,29 +46,4 @@ while(user_input !='y')
   cin>>user_input;
 }
 
-}
-
-float add(float a, float b)
-{
-  return a +b ;
-}
-
-float subtract(float a, float b)
-{
-  return a - b;
-}
-
-float mult(float a, float b)
-{
-  return a * b;
-}
-
-float our_div(float a, float b)
-{
-  if (b !=0){
-  return a / b;
-}
-else {
-  return -1;
-}
 }
